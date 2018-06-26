@@ -69,6 +69,9 @@ public class CanalDemo {
             }
 
             EventType eventType = rowChage.getEventType();
+            // Binlog Mixed
+            String sql = rowChage.getSql();
+            System.out.println("SQL : " + sql);
             System.out.println(String.format("================&gt; binlog[%s:%s] , name[%s,%s] , eventType : %s",
                     entry.getHeader().getLogfileName(), entry.getHeader().getLogfileOffset(),
                     entry.getHeader().getSchemaName(), entry.getHeader().getTableName(),
