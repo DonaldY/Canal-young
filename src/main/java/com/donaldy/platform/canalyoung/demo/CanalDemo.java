@@ -24,7 +24,7 @@ public class CanalDemo {
         int emptyCount = 0;
         try {
             connector.connect();
-            connector.subscribe(".*\\..*");
+            connector.subscribe("test.test");
             connector.rollback();
             int totalEmptyCount = 120;
             while (emptyCount < totalEmptyCount) {
@@ -72,6 +72,8 @@ public class CanalDemo {
             // Binlog Mixed
             String sql = rowChage.getSql();
             System.out.println("SQL : " + sql);
+
+            // Mixed pattern , can't get tableName, only schemaName
             System.out.println(String.format("================&gt; binlog[%s:%s] , name[%s,%s] , eventType : %s",
                     entry.getHeader().getLogfileName(), entry.getHeader().getLogfileOffset(),
                     entry.getHeader().getSchemaName(), entry.getHeader().getTableName(),
