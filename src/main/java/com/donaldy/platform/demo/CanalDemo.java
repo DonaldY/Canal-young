@@ -1,4 +1,4 @@
-package com.donaldy.platform.canalyoung.demo;
+package com.donaldy.platform.demo;
 
 import java.net.InetSocketAddress;
 import java.util.List;
