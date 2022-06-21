@@ -32,7 +32,7 @@
 		<mybatis.spring.boot>1.2.0</mybatis.spring.boot>
 		<lombok.version>1.16.20</lombok.version>
 		<mybatis.version>3.4.5</mybatis.version>
-		<mysql.connector.version>6.0.6</mysql.connector.version>
+		<mysql.connector.version>8.0.28</mysql.connector.version>
 		<hikari.version>2.7.6</hikari.version>
 		<kafka.version>0.10.2.1</kafka.version>
 		<protobuf.version>3.5.1</protobuf.version>
